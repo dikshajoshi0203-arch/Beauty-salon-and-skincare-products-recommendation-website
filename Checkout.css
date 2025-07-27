@@ -1,0 +1,76 @@
+.checkout-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    font-size: 26px;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    background: #f9f9f9;
+}
+
+input:focus {
+    border-color: #f143a6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.3);
+    background: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #ea3c7f, #e8349a);
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #eb4291, #ea44a2);
+    transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+    .checkout-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    input, button {
+        font-size: 16px;
+    }
+}
